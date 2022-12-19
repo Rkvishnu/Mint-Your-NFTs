@@ -5,15 +5,14 @@ module.exports = {
   defaultNetwork: "localhost",
   networks: {
     hardhat: {
-    },
+    },  
     localhost: {
       url: "http://127.0.0.1:8545"
     },
-    rinkeby: {
-      url: process.env.ENDPOINT_URL,
-      // chainId: 4,
-      accounts: [process.env.DEPLOYER_KEY]
-    }
+    // goerli: {
+    //   url: process.env.ENDPOINT_URL,
+    //   accounts: [process.env.DEPLOYER_KEY]
+    // }
   },
   solidity: {
     version: '0.8.11',
